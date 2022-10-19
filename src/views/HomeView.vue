@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <BannerView />
+    <CategorySection />
+    <ShopList />
+  </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import BannerView from '@/components/Banner.vue'
+import CategorySection from '@/components/Category.vue'
+import ShopList from '@/components/ShopList'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    BannerView,
+    CategorySection,
+    ShopList
   }
 }
 </script>
+
+<style>
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+</style>
